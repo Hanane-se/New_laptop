@@ -15,9 +15,9 @@
                            ];
                           
              
-                  CurrentPrice=ParseFloat(prompt("Give us your current budget")) ;
+                  CurrentPrice=ParseFloat(prompt("Give us your current budget"))=GetElemenById("price") ;
                   
-                  BuyNewLaptop{
+                  BuyNewLaptop(){
                           for(let i=0;i<7;i++){
                           if(CurrentPrice > TypesAndPrices[i].AvPrice){
                     GetElementById("price").InnerHTML=console.log(TypesAndPrices[i].type);    
@@ -125,7 +125,14 @@ Average Price: $1,819
 
       
     </dl>
+
+
+
     
     <p id="price">Here's what you need</p>
+<p id="current">Price:+</p>
+
+
+    
   </body>
 </html>
