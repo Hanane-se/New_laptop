@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>New laptop</title>
+          <script>
+                  
+                  const TypesAndPrices=[
+                          {type: "Ultrabooks" , AvPrice: "1,149"},
+                          {type: "MacBooks" , AvPrice: "1,099"},
+                          {type: "Budget Laptops" , AvPrice: "279.99"},
+                          {type: "Business Laptops" , AvPrice: "1,396.01"},
+                          {type: "Gaming Laptops" , AvPrice: "2,699.99" },
+                          {type: "2-in-1 Laptops" , AvPrice: "1,299.99" },
+                          {type: "Chromebooks", AvPrice: "439.95"},
+                          {type: "Workstation Laptops" , AvPrice: "1,819"}
+                           ];
+                          
+             
+                  CurrentPrice=ParseFloat(prompt("Give us your current budget")) ;
+                  
+                  BuyNewLaptop{
+                          for(let i=0;i<7;i++){
+                          if(CurrentPrice > TypesAndPrices[i].AvPrice){
+                    GetElementById("price").InnerHTML=console.log(TypesAndPrices[i].type);    
+                          }
+                                  }
+                  }
+          </script>
+  </head>
+  <body>
+    <h2>Did you decide to buy a new laptop but you still not have enough information about this important step that can be success key in youn career</h2>
+    <p id="price">Here's what you need</p>
+  </body>
+</html>
